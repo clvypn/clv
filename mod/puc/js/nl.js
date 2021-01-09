@@ -25,12 +25,14 @@ $(function () {
 		dragF = 0;
 		$(".vlmH").css("box-shadow", "inset #0008 0 3px");
 		$("#vlmOpenBtn").html("<i class='bi-list'></i>");
+		$("html").removeClass("noscrl");
 	}
 	function vlmOpen() {
 		draggie.setPosition(0,window.innerHeight * 0.25);
 		dragF = 1;
 		$(".vlmH").css("box-shadow", "inset yellowgreen 0 3px");
 		$("#vlmOpenBtn").html("<i class='bi-x-circle'></i>");
+		$("html").addClass("noscrl");
 	}
 	draggie.on( 'dragEnd', function( event, pointer ) {
 		dragPosEnd = Math.floor(draggie.position.y);

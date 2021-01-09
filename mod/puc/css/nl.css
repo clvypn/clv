@@ -76,3 +76,6 @@ code{
     font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
     font-size: 0.75em;
 }
+.noscrl{
+    overflow: hidden;
+}
