@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>NC07-SCI13-TB01</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Share+Tech&family=Share+Tech+Mono&display=swap"
+		rel="stylesheet" />
+
+
+
+	<script>
+		window.MathJax = {
+			tex: {
+				inlineMath: [['$', '$'], ['\\(', '\\)']],
+				packages: { '[+]': ['mhchem'] }
+			},
+			loader: { load: ['[tex]/mhchem'] },
+		};
+	</script>
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+	<style>
+		* {
+			font-family: 'Noto Serif', Georgia, 'Times New Roman', Times, serif;
+		}
+
+		body,
+		html {
+			background: wheat;
+			color: #000a;
+			margin: 0;
+			padding: 0;
+		}
+
+		@media print {
+			@page {
+				margin: 0.5in 0in;
+				background: wheat;
+				color: #000a;
+			}
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			font-family: 'Share Tech', sans-serif;
+            color: #000c;
+		}
+        h1,h2{
+            color: #000f;
+        }
+		h3,
+		h4,
+		h5,
+		h6 {
+			border-bottom: solid #0006 7px;
+            padding: 0.25em;
+		}
+        
+
+		.mid {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+            text-align: center;
+		}
+        .ct1{
+            counter-reset: ct1;
+            margin-left: 3em;
+        }
+        .ct1 > .q::before{
+            content: counter(ct1,decimal-leading-zero) ".";
+            display: inline-block;
+            counter-increment: ct1;
+            width: 2.5em;
+            margin-right: 0.5em;
+            text-align: right;
+        }
+        #main{
+            padding: 0 0.5in;
+            counter-reset: ctI;
+        }
+        #main > h3::before{
+            content: counter(ctI,upper-roman) ".";
+            display: inline-block;
+            counter-increment: ctI;
+            width: 2.5em;
+            margin-right: 0.5em;
+            text-align: right;
+        }
+        .ct1 > .a::before{
+            content: "Ans. ";
+            display: inline-block;
+            width: 2.5em;
+            margin-right: 0.5em;
+            text-align: right;
+        }
+        .a{
+            display: inline-block;
+            margin-top: 0;
+            margin-bottom: 1em;
+            margin-left: 2em;
+            font-family: 'Noto Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .q{
+            font-family: 'Noto Serif', Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+	</style>
+</head>
+
+<body>
+    <div id="main">
+        <h1 class="mid">Time and Motion</h1>
+        <h3>Introduction:</h3>
+        <div class="ct1">
+            <div class="q">What would be the electron dot structure of carbon dioxide which has the formula $\ce{CO2}$?</div>
+            <div class="a">Diagram</div>
+
+            <div class="q">What would be the electron dot structure of a molecule of sulphur which is made up of
+                eight atoms of sulphur?<br />(Hint − the eight atoms of sulphur are joined together in the
+                form of a ring.)</div>
+            <div class="a">Diagram</div>
+
+            <div class="q">How many structural isomers can you draw for pentane?</div>
+            <div class="a">Diagrams</div>
+
+            <div class="q">What are the two properties of carbon which lead to the huge number of carbon
+                compounds we see around us?</div>
+            <div class="a">The two properties of carbon which lead to the huge number of carbon
+                compounds are:<br />
+                <b>(i) Catenation:</b> It is the ability to form long chains by forming covalent bonds with other atoms of carbon.<br />
+                <b>(ii) Tetravalency:</b> It is the ability of carbon to form 4 covalent bonds with atoms of other elements like O, Cl, H etc.</div>
+            
+            <div class="q">What will be the formula and electron dot structure of cyclopentane?</div>
+                <div class="a">Diagram</div>
+
+            <div class="q">Draw the structures for the following compounds:<br />(i)Ethanoic acid; (ii)Bromopentane; (iii)Butanone; (iv)Hexanal</div>
+                <div class="a">Diagrams</div>
+
+            <div class="q">Why do ionic compounds have high melting points?</div>
+            <div class="a">Ionic compounds are formed by the combination of ions.<br />
+                Therefore, there is a lot stronger electrostatic force of attraction between negative and positive ions and hence
+                 they require a lot of energy to break ionic bonds. That is why ionic
+                compounds have high melting points.</div>
+
+            <div class="q">Why is the conversion of ethanol to ethanoic acid an oxidation reaction?</div>
+                <div class="a">The only difference between molecule of ethanol (-OH) and Ethanoic Acid (-COOH) is the oxygen atom in ethanoic acid.<br/>
+                During this reaction an atom of oxygen get added to ethanol to convert it into ethanoic acid.</div>
+
+            <div class="q">A mixture of oxygen and ethyne is burnt for welding.
+                Can you tell why a mixture of ethyne and air is not used?</div>
+                <div class="a">Ethyne is an unsaturated compound of carbon. During combustion it will not burn completely if sufficient oxygen is not supplied.
+                    The flame will thus become sooty which might reduce the quality of weld. Thus to get a blue, non-sooty flame, ethyne is burnt in presence of oxygen.
+                    $$\ce{C2H2 + O2 -> CO2 + H2O + \text{Heat}}$$
+                </div>
+            <div class="q">How would you distinguish experimentally between an alcohol and a carboxylic acid?</div>
+            <div class="a">we know that acids react with carbonates and hydrogen carbonates to </div>
+        </div>
+    </div>
+</body>
+
+</html>

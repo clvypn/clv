@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Kalam:wght@300;400;700&family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+html,body{
+    margin: 0; padding: 0;
+    background: wheat;
+    color: #000a;
+}
+#vlmCont{
+    background: #f006;
+    height: calc(75vh + 75vh - 7vh);
+    position: fixed;
+    top: 25vh;
+    width: 1vw;
+}
+.vlm{
+    position: fixed;
+    bottom: calc(-75vh + 7vh);
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    width: 10000%;
+    background: #000a;
+    backdrop-filter: blur(3px);
+    color: #ddd;
+}
+.vlmH{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: flex-start;
+    box-shadow: inset #0008 0 3px;
+}
+.vlmH > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 7vh;
+    width: 10vw;
+}
+.vlmH > div:last-child{
+    width: 60vw;
+}
+#main{
+    padding: 2vw;
+}
+.logo{
+    font-family: 'Carter One', Arial, Helvetica, sans-serif;
+    color: yellowgreen;
+}
+#vlmBody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-y: scroll;
+    width: 100vw;
+    box-shadow: inset #ddd8 0 3px;
+    padding-top: 1.5em;
+    padding-bottom: 2em;
+}
+#vlmBody > a{
+    display: flex;
+    width: 80%;
+    padding: 0.2em;
+    text-decoration: none;
+    color: #ddd;
+    text-align: center;
+    border: #ddd 1px solid;
+    margin: 0.25em 0;
+    backdrop-filter: blur(2px);
+}
+code{
+    border-radius: 1em;
+    padding: 1em!important;
+    font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
+    font-size: 0.75em;
+}
