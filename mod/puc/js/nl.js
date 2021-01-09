@@ -1,6 +1,16 @@
 $(function () {
 	console.log("Init success!!");
 
+	function toggleFullScreen() {
+		if (!document.fullscreenElement) {
+			document.documentElement.requestFullscreen();
+		} else {
+		  if (document.exitFullscreen) {
+			document.exitFullscreen();
+		  }
+		}
+	}
+
 	var elem = document.querySelector('.vlm');
 	var draggie = new Draggabilly( elem, {
 		axis: 'y', containment: '.vlmCont', handle: '.vlmH'
@@ -71,4 +81,8 @@ $(function () {
 			console.log("Clicked1");
 		}
 	});
+	$(".logo").click(function() {
+		toggleFullScreen();
+	});
+
 });
